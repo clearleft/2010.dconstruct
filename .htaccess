@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^speakers\/(.*)$ /base.php?page=speakers&speaker=$1 [L]
+
+RewriteCond %{REQUEST_URI} !^/base\.php*
+RewriteRule ^$ /base.php?page=home [L]
+
+RewriteCond %{REQUEST_URI} !^/base\.php*
+RewriteRule ^(.*)$ /base.php?page=$1 [L]

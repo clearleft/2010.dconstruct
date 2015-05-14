@@ -2,7 +2,7 @@
 
 class Speaker {
     
-    public function __construct($first_name, $last_name, $title, $mini_bio, $blurb, $website, $twitter_name, $is_workshop, $audio, $huffduffer) {
+    public function __construct($first_name, $last_name, $title, $mini_bio, $blurb, $website, $twitter_name, $is_workshop = false, $audio = false, $huffduffer = false) {
         
         $this->id = strtolower($first_name) . "-" . strtolower($last_name);
         

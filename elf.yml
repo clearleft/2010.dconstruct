@@ -4,3 +4,6 @@ deploy:
   branch: master
   server: dconstruct.clearleft.host
   domain: 2010.dconstruct.org
+
+devbox:
+    domain: 2010.dconstruct.elf

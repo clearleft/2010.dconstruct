@@ -10,31 +10,30 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="User Experience Design, Conference, Event, Brighton, Clearleft">
     <meta name="description" content="dConstruct is an affordable, one-day conference aimed at those building the latest generation of websites. The event discusses how to design websites that not only work, but are an enjoyable experience for the user.">
-    
+
     <meta name="geo.position" content="50.8234;-0.1382">
     <meta name="ICBM" content="50.8234,-0.1382">
-    
+
     <meta name="viewport" content="width=450">
-    
+
     <link rel="alternate" type="application/rss+xml" title="dConstruct 2010 Podcast" href="http://huffduffer.com/dConstruct/tags/dconstruct2010/rss">
     <link rel="alternate" type="application/rss+xml" title="Clearleft Events" href="http://feeds.feedburner.com/ClearleftEvents">
     <link rel="alternate" type="application/atom+xml" title="dConstruct Latest News" href="http://lukearno.com/projects/hatom2atom?url=http://2010.dconstruct.org">
     <!--<link rel="alternate" type="application/rss+xml" title="dConstruct 2010 podcast" href="http://huffduffer.com/dConstruct/tags/dconstruct10">-->
-    
+
     <link rel="profile" href="http://microformats.org/profile/hcalendar">
     <link rel="profile" href="http://microformats.org/profile/hcard">
     <link rel="profile" href="http://microformats.org/profile/hatom">
-    
+
     <title><?php echo DconFrame::get_title(True) ?></title>
-    
+
     <!--[if lte IE 8]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     
-    <link rel="stylesheet" href="http://f.fontdeck.com/s/css/zH28mslJNSfrEtk/N8vkA5GMvEQ/<?php echo $_SERVER["HTTP_HOST"] ?>/167.css">
     <link rel="stylesheet" href="<?php echo DconFrame::$media_url_1; ?>/c/public/core.zip.css?<?php echo DconFrame::$media_version; ?>" media="screen">
     <!-- For those interested, here's an unminified version of the CSS: <?php echo DconFrame::$media_url_1; ?>/c/s/core.css -->
-    
+
     <!-- Some overrides and bug fixes for IE -->
     <!--[if lte IE 6]>
     <link rel="stylesheet" href="<?php echo DconFrame::$media_url_2; ?>/c/public/ie6.css?<?php echo DconFrame::$media_version; ?>" media="screen">
@@ -43,7 +42,7 @@
 </head>
 <body id="<?php echo DconFrame::get_page_id(); ?>" <?php if(DconFrame::$tickets_for_sale): ?> class="tickets-available"<?php endif; ?>>
 <div class="overflow-catch">
-    
+
 <nav class="site-nav" role="navigation">
 <?php include("includes/main-nav.php"); ?>
 </nav>
@@ -58,17 +57,17 @@
         <div id="tile-container" class="tile-container">
             <?php echo DconFrame::get_page_tiles(); ?>
         </div><!-- /.tile-container -->
-        
+
         <div class="main" role="main">
             <?php echo DconFrame::get_page_content(); ?>
         </div><!-- /.main -->
-        
+
         <?php if ($_GET['page'] == 'speakers') { ?>
         <div class="secondary">
             <?php include("includes/speaker-list.php") ?>
         </div>
         <?php } ?>
-        
+
         <section class="register">
             <?php if(False): ?>
             <h2 class="register-now"><a href="<?php echo DconFrame::$register_url ?>" class="action">Register Now!</a></h2>
@@ -77,7 +76,7 @@
             <?php endif; ?>
             <p class="price"><strong>&pound;125</strong> + VAT</p>
         </section>
-    
+
         <div class="meta-boiler" role="complementary">
             <aside class="sponsors">
                 <div class="container">
@@ -108,9 +107,9 @@
                 </div>
             </aside>
         </div>
-    
-    
-    
+
+
+
     </div><!-- /.recep -->
     <nav class="meta-nav">
         <ul>
